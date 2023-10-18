@@ -1,0 +1,163 @@
+
+
+INSERT INTO Genre(nom) VALUES
+('Drama'),
+('Crime'),
+('Action'),
+('Fantasy'),
+('Sci-Fi'),
+('Adventure'),
+('Animation'),
+('Romance');
+
+
+
+INSERT INTO Film (titre, description, genre_id, année_sortie, quantité) VALUES 
+('The Shawshank Redemption', 'Two imprisoned men bond over several years, finding solace and eventual redemption through acts of common decency.', 1, 1994, 15),
+('The Godfather', 'The aging patriarch of an organized crime dynasty transfers control of his clandestine empire to his reluctant son.', 2, 1972, 20),
+('The Godfather: Part II', 'The early life and career of Vito Corleone in 1920s New York City is portrayed, while his son, Michael, expands and tightens his grip on the family crime syndicate.', 2, 1974, 17),
+('Pulp Fiction', 'The lives of two mob hitmen, a boxer, a gangster and his wife, and a pair of diner bandits intertwine in four tales of violence and redemption.', 2, 1994, 14),
+('The Dark Knight', 'When the menace known as the Joker wreaks havoc and chaos on the people of Gotham, Batman must accept one of the greatest psychological and physical tests of his ability to fight injustice.', 3, 2008, 25),
+('Fight Club', 'An insomniac office worker and a devil-may-care soapmaker form an underground fight club that evolves into something much, much more.', 1, 1999, 25),
+('Inception', 'A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a CEO.', 3, 2010, 15),
+('The Lord of the Rings: The Fellowship of the Ring', 'A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.', 4, 2001, 20),
+('The Lord of the Rings: The Return of the King', 'Gandalf and Aragorn lead the World of Men against Sauron\'s army to draw his gaze from Frodo and Sam as they approach Mount Doom with the One Ring.', 4, 2003, 18),
+('Interstellar', 'A team of explorers travels through a wormhole in space in an attempt to ensure humanity\'s survival.', 5, 2014, 25),
+('Forrest Gump', 'The presidencies of Kennedy and Johnson, the Vietnam War, and the Watergate scandal envelop the Forrest Gump, a friendly, simple-minded, and athletically-talented man.', 1, 1994, 10),
+('Goodfellas', 'The story of Henry Hill and his life in the mob, covering his relationship with his wife Karen Hill and his mob partners Jimmy Conway and Tommy DeVito in the Italian-American crime syndicate.', 2, 1990, 17),
+('Star Wars: Episode IV - A New Hope', 'Luke Skywalker joins forces with a Jedi Knight, a cocky pilot, a Wookiee and two droids to save the galaxy from the Empire\'s world-destroying battle station, while also attempting to rescue Princess Leia from the mysterious Darth Vader.', 5, 1977, 15),
+('The Avengers', 'Earth\'s mightiest heroes must come together and learn to fight as a team if they are going to stop the mischievous Loki and his alien army from enslaving humanity.', 3, 2012, 24),
+('Jurassic Park', 'A pragmatic paleontologist visiting an almost complete theme park is tasked with protecting a couple of kids after a power failure causes the park\'s cloned dinosaurs to run loose.', 6, 1993, 14),
+('The Lion King', 'Lion prince Simba and his father are targeted by his bitter uncle, who wants to ascend the throne himself.', 7, 1994, 13),
+('Titanic', 'A seventeen-year-old aristocrat falls in love with a kind but poor artist aboard the luxurious, ill-fated R.M.S. Titanic.', 8, 1997, 21),
+('The Matrix', 'A computer hacker learns from mysterious rebels about the true nature of his reality and his role in the war against its controllers.', 5, 1999, 19);
+
+
+
+INSERT INTO Copie_de_film (film_id, is_damaged) VALUES 
+(1, false), (1, false), (1, true), (2, false), (2, true), (2, false), 
+(3, false), (3, true), (3, false), (4, false), (4, false), (4, true), 
+(5, false), (5, true), (5, false), (6, false), (6, true), (6, false), 
+(7, false), (7, false), (7, true), (8, false), (8, true), (8, false), 
+(9, false), (9, false), (9, true), (10, false), (10, true), (10, false),
+(11, false), (11, true), (11, false), (12, false), (12, false), (12, true),
+(13, false), (13, false), (13, true), (14, false), (14, true), (14, false),
+(15, false), (15, true), (15, false), (16, false), (16, false), (16, true),
+(17, false), (17, true), (17, false), (18, false), (18, false), (18, true),
+(13, false), (13, false), (13, false), (13, false),(13, true),
+(9, false), (9, false), (9, true), (9, false), (9, false), (9, true),
+(14, false), (14, true), (14, false), (15, false), (15, true), (15, false),
+(16, false), (16, false), (16, true), (17, false), (17, true), (17, false),
+(18, false), (18, false), (18, true), (18, false), (18, false), (18, true),
+(10, false), (10, true), (10, false), (10, false), (10, true), (10, false),
+(13, false), (13, false), (13, true), (14, false), (14, true), (14, false),
+(15, false), (15, true), (15, false), (16, false), (16, false), (16, true),
+(17, false), (17, true), (1, false), (1, false), (1, true), 
+(10, false), (10, true), (10, false), (10, false), (10, true), (10, false),
+(2, false), (2, true), (2, false), (3, false), (3, true), (3, false),
+(4, false), (4, false), (4, true), (5, false), (5, true), (5, false),
+(6, false), (6, true), (6, false), (7, false), (7, false), (7, true),
+(8, false), (8, true), (8, false), (9, false), (9, false), (9, true),
+(10, false), (10, true), (10, false), (10, false), (10, true), (10, false),
+(2, false), (2, true), (2, false), (3, false), (3, true), (3, false),
+(18, false), (18, false), (18, true), (18, false), (18, false), (18, true),
+(10, false), (10, true), (10, false), (10, false), (10, true), (10, false);
+
+
+
+INSERT INTO Réalisateur(prénom, nom) VALUES
+('Frank', 'Darabont'),
+('Francis', 'Ford Coppola'),
+('Quentin', 'Tarantino'),
+('Christopher', 'Nolan'),
+('David', 'Fincher'),
+('Peter', 'Jackson'),
+('Robert', 'Zemeckis'),
+('Martin', 'Scorsese'),
+('George', 'Lucas'),
+('Joss', 'Whedon'),
+('Steven', 'Spielberg'),
+('Roger', 'Allers'),
+('Rob', 'Minkoff'),
+('James', 'Cameron'),
+('Lana', 'Wachowski'), 
+('Lilly', 'Wachowski');
+
+
+INSERT INTO Film_Réalisateur(film_id, réalisateur_id) VALUES
+(1,1), (2,2), (3,2), (4,3), (5,4), (6,5), (7,4), (8,6), 
+(9,6), (10,4), (11,7), (12,8), (13,9), (14,10), (15,11), 
+(16,12), (16,13),
+(17,14),
+(18,15), (18,16);
+
+
+INSERT INTO Acteur(prénom, nom) VALUES
+('Tim', 'Robbins'),
+('Morgan', 'Freeman'),
+('Marlon', 'Brando'),
+('Al', 'Pacino'), 
+('James', 'Caan'),
+('Robert', 'De Niro'),
+('Robert', 'Duvall'),
+('John', 'Travolta'), 
+('Uma', 'Thurman'),
+('Samuel', 'L. Jackson'),
+('Christian', 'Bale'),
+('Heath', 'Ledger'), 
+('Aaron', 'Eckhart'),
+('Brad', 'Pitt'),
+('Edward', 'Norton'),
+('Leonardo', 'DiCaprio'), 
+('Joseph', 'Gordon-Levitt'), 
+('Ellen', 'Page'),
+('Elijah', 'Wood'),
+('Ian', 'McKellen'),
+('Viggo', 'Mortensen'), 
+('Matthew', 'McConaughey'), 
+('Anne', 'Hathaway'),
+('Tom', 'Hanks'),
+('Robin', 'Wright'),
+('Gary', 'Sinise'),
+('Ray', 'Liotta'),
+('Mark', 'Hamill'),
+('Harrison', 'Ford'),
+('Robert', 'Downey Jr.'),
+('Chris', 'Evans'),
+('Sam', 'Neill'),
+('Laura', 'Dern'),
+('Matthew', 'Broderick'),
+('Jeremy', 'Irons'),
+('Kate', 'Winslet'),
+('Keanu', 'Reeves'),
+('Laurence', 'Fishburne');
+
+
+INSERT INTO Film_Acteur(film_id, acteur_id) VALUES
+(1,1), (1,2), (2,3),
+(2,4), (2,5),
+(3,4), (3,6), (3,7),
+(4,8), (4,9), (4,10),
+(5,11), (5,12), (5,13),
+(6,14), (6,15),
+(7,16), (7,17), (7,18),
+(8,19), (8,20),
+(9,19), (9,21), (9,20),
+(10,22), (10,23),
+(11,24), (11,25), (11,26),
+(12,6), (12,27),
+(13,28), (13,29),
+(14,30), (14,31),
+(15,32), (15,33),
+(16,34), (16,35),
+(17,16), (17,36),
+(18,37), (18,38);
+
+
+
+INSERT INTO Utilisateur (nom, prenom, login, mot_passe) VALUES 
+('Biazverkhi', 'Mike', 'Admin', '123'),
+('Leroux', 'Simon', 'Superadmin', '333');
+
+
+

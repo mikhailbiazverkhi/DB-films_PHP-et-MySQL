@@ -1,0 +1,21 @@
+Bonjour, Monsieur Leroux!
+
+
+
+Pour tester TP2 on peut utiliser le comptes suivants:
+
+login: Superadmin ,  
+mot de passe: 333
+
+ou
+
+login: Admin ,
+mot de passe: 123
+
+
+ou 
+
+on peut créer le nouveau compte.
+
+
+Bonne journée!

@@ -1,0 +1,82 @@
+
+
+DROP DATABASE IF EXISTS Cinémathèque;
+CREATE DATABASE Cinémathèque;
+USE Cinémathèque;
+
+
+CREATE TABLE Genre (
+	id int primary key auto_increment,
+	nom varchar (200) not null
+);
+
+
+CREATE TABLE Film (
+	id int primary key auto_increment,
+	titre varchar (200) not null,
+	description varchar (500) not null,
+	genre_id int not null,
+	année_sortie int(4) not null,
+	quantité int not null,
+
+	foreign key (genre_id) references Genre(id)
+);
+
+
+CREATE TABLE Copie_de_film (
+	id int primary key auto_increment,
+	film_id int not null,
+	is_damaged boolean DEFAULT false,
+
+	foreign key (film_id) references Film(id)
+);
+
+
+
+CREATE TABLE Réalisateur (
+	id int primary key auto_increment,
+	prénom varchar (200) not null,
+	nom varchar (200) not null
+);
+
+
+CREATE TABLE Film_Réalisateur (
+	id int primary key auto_increment,
+	film_id int not null,
+	réalisateur_id int not null,
+
+	foreign key (film_id) references Film(id),
+	foreign key (réalisateur_id) references Réalisateur(id)
+);
+
+
+CREATE TABLE Acteur (
+	id int primary key auto_increment,
+	prénom varchar (200) not null,
+	nom varchar (200) not null
+);
+
+
+CREATE TABLE Film_Acteur (
+	id int primary key auto_increment,
+	film_id int not null,
+	acteur_id int not null,
+
+	foreign key (film_id) references Film(id),
+	foreign key (acteur_id) references Acteur(id)
+);
+
+
+CREATE TABLE Utilisateur (
+	id INT(11) PRIMARY KEY AUTO_INCREMENT,
+	nom VARCHAR(100) NOT NULL,
+	prenom VARCHAR(100) NOT NULL,
+	login VARCHAR(100) NOT NULL UNIQUE,
+	mot_passe VARCHAR(50) NOT NULL
+);
+
+
+
+
+
+
